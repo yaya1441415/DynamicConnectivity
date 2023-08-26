@@ -30,15 +30,15 @@ public class UfQuickUnion {
         id[i] = j;
     }
     public static void main(String[] args){
-        Uf k = new Uf(7);
+        UfQuickUnion k = new UfQuickUnion(7);
         k.union(3, 6);
         k.union(1, 5);
         k.union(1,2);
         k.union(3,1);
 
-        System.out.println(k.quickfind(1, 3));
-        System.out.println(k.quickfind(1,6));
-        System.out.println(k.quickfind(2,5));
-        System.out.println(k.quickfind(0,1));
+        System.out.println(k.find(1, 3));
+        System.out.println(k.find(1,6));
+        System.out.println(k.find(2,5));
+        System.out.println(k.find(0,1));
     }
 }
