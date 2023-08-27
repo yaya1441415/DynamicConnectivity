@@ -60,11 +60,12 @@ public class Uf_Weighting {
         //examples
         data.union(2, 5);
         System.out.println(data.conneted(2, 5));//true
-        System.out.println(data.conneted(3, 5));// falss
+        System.out.println(data.conneted(3, 5));// false
         data.union(1, 5);
         System.out.println(data.conneted(2,1));// true
         data.union(2,7 );
-        System.out.println(data.conneted(7, 1));// true 
+        System.out.println(data.conneted(7, 1));//true
+
 
     }
 }
